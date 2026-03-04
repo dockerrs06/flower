@@ -1,6 +1,10 @@
 {
 	"name": "dest",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ffff",
+			"type": "LinkedServiceReference"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

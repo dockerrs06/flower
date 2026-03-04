@@ -5,8 +5,23 @@
         "factoryName": {
             "value": "dev-adf-000"
         },
+
         "ffff_properties_typeProperties_serviceEndpoint": {
             "value": "https://devstroageacc001.blob.core.windows.net/"
+        },
+
+        "source_folderName": {
+            "value": "sourcedata"
+        },
+        "source_fileName": {
+            "value": "employee_data_dev.csv"
+        },
+
+        "dest_folderName": {
+            "value": "dest"
+        },
+        "dest_fileName": {
+            "value": "employee_data_dev.csv"
         }
     }
 }

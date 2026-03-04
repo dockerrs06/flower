@@ -69,7 +69,7 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "sou",
+								"referenceName": "dest",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -89,7 +89,6 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/sou')]",
 				"[concat(variables('factoryId'), '/datasets/dest')]"
 			]
 		},
@@ -102,12 +101,29 @@
 					"referenceName": "ffff",
 					"type": "LinkedServiceReference"
 				},
+				"parameters": {
+					"fileName": {
+						"type": "string",
+						"defaultValue": "employee_data_dev.csv"
+					},
+					"folderName": {
+						"type": "string",
+						"defaultValue": "dest"
+					}
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"container": "dest"
+						"fileName": {
+							"value": "@dataset().fileName",
+							"type": "Expression"
+						},
+						"container": {
+							"value": "@dataset().folderName",
+							"type": "Expression"
+						}
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -129,13 +145,29 @@
 					"referenceName": "ffff",
 					"type": "LinkedServiceReference"
 				},
+				"parameters": {
+					"fileName": {
+						"type": "string",
+						"defaultValue": "employee_data_dev.csv"
+					},
+					"folderName": {
+						"type": "string",
+						"defaultValue": "sourcedata"
+					}
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"fileName": "employee_data_dev.csv",
-						"container": "sourcedata"
+						"fileName": {
+							"value": "@dataset().fileName",
+							"type": "Expression"
+						},
+						"container": {
+							"value": "@dataset().folderName",
+							"type": "Expression"
+						}
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",

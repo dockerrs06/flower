@@ -1,9 +1,17 @@
 {
-	"name": "sou",
+	"name": "source",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ffff",
 			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			},
+			"folderName": {
+				"type": "string"
+			}
 		},
 		"annotations": [],
 		"type": "DelimitedText",

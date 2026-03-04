@@ -1,3 +1,4 @@
+
 {
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
@@ -5,8 +6,23 @@
         "factoryName": {
             "value": "itg-env-000"
         },
+
         "ffff_properties_typeProperties_serviceEndpoint": {
             "value": "https://itgstroageaccoun002.blob.core.windows.net/"
+        },
+
+        "source_folderName": {
+            "value": "source"
+        },
+        "source_fileName": {
+            "value": "employee_data_itg.csv"
+        },
+
+        "dest_folderName": {
+            "value": "dest"
+        },
+        "dest_fileName": {
+            "value": "employee_data_itg.csv"
         }
     }
 }

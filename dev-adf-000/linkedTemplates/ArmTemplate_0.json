@@ -206,14 +206,20 @@
 							{
 								"referenceName": "dest",
 								"type": "DatasetReference",
-								"parameters": {}
+								"parameters": {
+									"fileName": "employee_data_dev.csv",
+									"folderName": "dest"
+								}
 							}
 						],
 						"outputs": [
 							{
 								"referenceName": "dest",
 								"type": "DatasetReference",
-								"parameters": {}
+								"parameters": {
+									"fileName": "employee_data_dev.csv",
+									"folderName": "dest"
+								}
 							}
 						]
 					}

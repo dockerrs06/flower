@@ -23,7 +23,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "Copy data",
+						"name": "data",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {

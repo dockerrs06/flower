@@ -49,7 +49,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "source",
+						"referenceName": "sourcess",
 						"type": "DatasetReference"
 					}
 				],

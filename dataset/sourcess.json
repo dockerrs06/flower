@@ -1,5 +1,5 @@
 {
-	"name": "source",
+	"name": "sourcess",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",

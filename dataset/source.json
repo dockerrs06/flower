@@ -18,8 +18,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "employee_data_dev.csv",
-				"container": "sourcedata"
+				"fileName": "@dataset().fileName",
+				"container": "@dataset().folderName"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

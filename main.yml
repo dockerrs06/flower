@@ -43,7 +43,7 @@
           parameters:
             Environment: 'ISAC-DEV-ADF-ENV'
             AzureServiceConnection: 'DEV-SUB' # it is belong to development azure devops service connection name.
-            adfName: "dev-adf-env-001"
+            adfName: "dev-adf-000"
             subscriptionID: "e3d41855-059e-4340-b9ba-28d873e8605b"
             resourceGroup: "sundar-rg"
             environmentParameterFile: 'parameter/parameter.dev.json'
@@ -58,7 +58,7 @@
           parameters:
             Environment: 'ISAC-ITG-ENV'
             AzureServiceConnection: 'DEV-SUB' # it is belong to development azure devops service connection name.
-            adfName: "itg-adf-env-001"
+            adfName: "itg-env-000"
             subscriptionID: "e3d41855-059e-4340-b9ba-28d873e8605b"
             resourceGroup: "sundar-rg"
             environmentParameterFile: 'parameter/parameter.feature_itg.json'

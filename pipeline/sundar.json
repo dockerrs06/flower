@@ -49,7 +49,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "sou",
+						"referenceName": "dest",
 						"type": "DatasetReference"
 					}
 				],

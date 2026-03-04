@@ -5,13 +5,23 @@
 			"referenceName": "ffff",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"fileName": {
+				"type": "string",
+				"defaultValue": "employee_data_dev.csv"
+			},
+			"folderName": {
+				"type": "string",
+				"defaultValue": "sourcedata"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "employee_data_dev.csv",
-				"container": "sourcedata"
+				"fileName": "@dataset().fileName",
+				"container": "@dataset().folderName"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

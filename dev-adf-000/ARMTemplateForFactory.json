@@ -7,7 +7,7 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "dev-adf-000"
 		},
-		"AzureBlobStorage1_properties_typeProperties_serviceEndpoint": {
+		"ffff_properties_typeProperties_serviceEndpoint": {
 			"type": "string",
 			"defaultValue": "https://devstroageacc001.blob.core.windows.net/"
 		}
@@ -23,7 +23,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "Copy data1",
+						"name": "Copy data",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
@@ -69,7 +69,7 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "source",
+								"referenceName": "sou",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -89,7 +89,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/source')]",
+				"[concat(variables('factoryId'), '/datasets/sou')]",
 				"[concat(variables('factoryId'), '/datasets/dest')]"
 			]
 		},
@@ -99,7 +99,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "AzureBlobStorage1",
+					"referenceName": "ffff",
 					"type": "LinkedServiceReference"
 				},
 				"annotations": [],
@@ -117,16 +117,16 @@
 				"schema": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureBlobStorage1')]"
+				"[concat(variables('factoryId'), '/linkedServices/ffff')]"
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/source')]",
+			"name": "[concat(parameters('factoryName'), '/sou')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "AzureBlobStorage1",
+					"referenceName": "ffff",
 					"type": "LinkedServiceReference"
 				},
 				"annotations": [],
@@ -178,18 +178,18 @@
 				]
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureBlobStorage1')]"
+				"[concat(variables('factoryId'), '/linkedServices/ffff')]"
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureBlobStorage1')]",
+			"name": "[concat(parameters('factoryName'), '/ffff')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
 				"type": "AzureBlobStorage",
 				"typeProperties": {
-					"serviceEndpoint": "[parameters('AzureBlobStorage1_properties_typeProperties_serviceEndpoint')]",
+					"serviceEndpoint": "[parameters('ffff_properties_typeProperties_serviceEndpoint')]",
 					"accountKind": "StorageV2"
 				}
 			},

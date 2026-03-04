@@ -7,7 +7,7 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "dev-adf-000"
 		},
-		"AzureBlobStorage1_properties_typeProperties_serviceEndpoint": {
+		"ffff_properties_typeProperties_serviceEndpoint": {
 			"type": "string",
 			"defaultValue": "https://devstroageacc001.blob.core.windows.net/"
 		},
@@ -38,8 +38,8 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"AzureBlobStorage1_properties_typeProperties_serviceEndpoint": {
-						"value": "[parameters('AzureBlobStorage1_properties_typeProperties_serviceEndpoint')]"
+					"ffff_properties_typeProperties_serviceEndpoint": {
+						"value": "[parameters('ffff_properties_typeProperties_serviceEndpoint')]"
 					}
 				}
 			},

@@ -5,7 +5,7 @@
 		"factoryName": {
 			"value": "dev-adf-000"
 		},
-		"AzureBlobStorage1_properties_typeProperties_serviceEndpoint": {
+		"ffff_properties_typeProperties_serviceEndpoint": {
 			"value": "https://devstroageacc001.blob.core.windows.net/"
 		}
 	}

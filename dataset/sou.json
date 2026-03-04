@@ -23,7 +23,8 @@
 				"fileName": {
 					"value": "@dataset().fileName",
 					"type": "Expression"
-				}
+				},
+				"container": "@dataset().folderName"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

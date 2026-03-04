@@ -7,10 +7,12 @@
 		},
 		"parameters": {
 			"fileName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "employee_data_dev.csv"
 			},
 			"folderName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "dest"
 			}
 		},
 		"annotations": [],

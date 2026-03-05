@@ -4,9 +4,6 @@
 	"parameters": {
 		"factoryName": {
 			"value": "dev-adf-000"
-		},
-		"ffff_properties_typeProperties_serviceEndpoint": {
-			"value": "https://devstroageacc001.blob.core.windows.net/"
 		}
 	}
 }

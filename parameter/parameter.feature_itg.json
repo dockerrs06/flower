@@ -1,12 +1,27 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-        "factoryName": {
-            "value": "itg-env-000"
-        },
-        "ffff_properties_typeProperties_serviceEndpoint": {
-            "value": "https://itgstroageaccoun002.blob.core.windows.net/"
-        }
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "factoryName": {
+      "value": "itg-adf-env-001"
+    },
+
+    "dev_ls_properties_typeProperties_serviceEndpoint": {
+      "value": "https://itgstaccount.blob.core.windows.net/"
+    },
+
+    "source_ds_properties_parameters_folderName_defaultValue": {
+      "value": "source"
+    },
+    "source_ds_properties_parameters_fileName_defaultValue": {
+      "value": "employee_data_itg.csv"
+    },
+
+    "destination_ds_properties_parameters_folderName_defaultValue": {
+      "value": "dest"
+    },
+    "destination_ds_properties_parameters_fileName_defaultValue": {
+      "value": "employee_data_itg.csv"
     }
+  }
 }

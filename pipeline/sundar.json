@@ -53,7 +53,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"fileName": "employee_data_dev.csv",
-							"folderName": "dest"
+							"folderName": "sourcedata"
 						}
 					}
 				],
